@@ -1,6 +1,8 @@
-import model.Cep;
+package com.gtbr;
 
-import java.util.Scanner;
+import com.gtbr.domain.Cep;
+
+import java.util.*;
 
 
 //Consulte o CEP através do webservice 'viacep.com.br' e retorne os valores do frete conforme as regras de negócio:

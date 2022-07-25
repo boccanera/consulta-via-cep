@@ -1,9 +1,16 @@
-package model;
+package com.example.demo.model;
 
 import lombok.Data;
 
+import javax.persistence.*;
+
 @Data
+@Entity
 public class Cep {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
 
     private String cep;
     private String logradouro;
@@ -15,4 +22,7 @@ public class Cep {
     private String gia;
     private String ddd;
     private String siafi;
-}
+
+
+    }
+
